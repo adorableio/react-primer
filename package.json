@@ -1,0 +1,24 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "itg-react-scripts start"
+  },
+  "devDependencies": {
+    "eslint-config-adorable": "^0.0.6",
+    "itg-react-scripts": "^0.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "adorable"
+    ]
+  }
+}
