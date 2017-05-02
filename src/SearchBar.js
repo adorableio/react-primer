@@ -13,6 +13,10 @@ class SearchBar extends PureComponent {
   render () {
     return (
       <div>
+        {/*
+          - wait... bind(null)?
+          - why are we passing this on this one, but not the other?
+           */}
         <input
           type='text'
           onKeyPress={this.handleKeyPress.bind(null, this)}

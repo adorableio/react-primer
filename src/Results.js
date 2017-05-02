@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import PropTypes          from 'prop-types';
 import axios              from 'axios';
+import qs                 from 'querystring';
 
-const GIPHY_URL = 'http://api.giphy.com/v1/gifs/search?q=';
+const GIPHY_URL = 'http://api.giphy.com/v1/gifs/search?';
 const API_KEY = 'dc6zaTOxFJmzC';
 
 class Results extends Component {
@@ -35,7 +36,13 @@ class Results extends Component {
 
     this.setState({searching: true});
 
-    axios.get(`${GIPHY_URL}${searchTerm}&api_key=${API_KEY}`)
+    const searchQuery = qs.stringify({
+      q: searchTerm,
+      rating: 'g',
+      api_key: API_KEY,
+    });
+
+    axios.get(`${GIPHY_URL}${searchQuery}`)
     .then((response) => {
       this.setState({
         gifs: response.data,
