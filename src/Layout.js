@@ -8,6 +8,7 @@ import SearchBar from 'SearchBar';
 class Layout extends PureComponent {
   // constructor receives props
   // should we explain props?
+  // I need props explained to me.
   constructor (props) {
     super(props);
 
