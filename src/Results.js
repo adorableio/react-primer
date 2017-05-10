@@ -19,6 +19,7 @@ class Results extends Component {
   static propTypes = {searchTerm: PropTypes.string};
 
   static defaultProps = {searchTerm: ''};
+
   // What is meant by 'Mount' as naming?
   componentWillMount () {
     this.search(this.props);
@@ -42,6 +43,7 @@ class Results extends Component {
       api_key: API_KEY,
     });
 
+    // What is axios?
     axios.get(`${GIPHY_URL}${searchQuery}`)
     .then((response) => {
       this.setState({

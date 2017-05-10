@@ -7,8 +7,7 @@ import SearchBar from 'SearchBar';
 // What is a PureComponent?
 class Layout extends PureComponent {
   // constructor receives props
-  // should we explain props?
-  // I need props explained to me.
+  // Please explain props
   constructor (props) {
     super(props);
 
@@ -18,6 +17,9 @@ class Layout extends PureComponent {
 
   handleSearch (event) {
     event.preventDefault();
+    // When would I assign to this.state instead of calling ``this.setState`?
+    // I presume that `setState` watches/notifies for changes, but I'm equally
+    // curious as to why we don't use it in the constructor.
     this.setState({searchTerm: event.target.value});
   }
 
