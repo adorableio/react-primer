@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import PropTypes              from 'prop-types';
-//What is PureComponent?
+// What is PureComponent?
 class SearchBar extends PureComponent {
   static propTypes = {
     handleSearch: PropTypes.func.isRequired,

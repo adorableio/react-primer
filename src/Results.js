@@ -19,7 +19,7 @@ class Results extends Component {
   static propTypes = {searchTerm: PropTypes.string};
 
   static defaultProps = {searchTerm: ''};
-  //What is meant by 'Mount' as naming?
+  // What is meant by 'Mount' as naming?
   componentWillMount () {
     this.search(this.props);
   }

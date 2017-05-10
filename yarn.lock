@@ -2520,9 +2520,9 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-itg-react-scripts@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/itg-react-scripts/-/itg-react-scripts-0.0.3.tgz#c835b7c72f66bbf427c324b8ea0831464e487919"
+itg-react-scripts@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/itg-react-scripts/-/itg-react-scripts-0.0.4.tgz#b70a8558c426a0de9967f5777ded0bfeecd7f9b1"
   dependencies:
     babel-core "^6.24.1"
     babel-loader "7.0.0-alpha.3"
@@ -3304,7 +3304,7 @@ react-dom@^15.5.4:
     object-assign "^4.1.0"
     prop-types "~15.5.7"
 
-react-hot-loader@^3.0.0-beta.6:
+react-hot-loader@3.0.0-beta.6, react-hot-loader@^3.0.0-beta.6:
   version "3.0.0-beta.6"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-3.0.0-beta.6.tgz#463fac0bfc8b63a8385258af20c91636abce75f4"
   dependencies:
